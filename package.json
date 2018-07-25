@@ -4,7 +4,7 @@
   "description": "This is a minimalistic tutorial of how to create a CRUD application with GraphQL, MongoDB and NodeJS",
   "main": "index.js",
   "scripts": {
-    "start": "index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gautemo/graphql-node-mongodb/issues"
   },
-  "homepage": "https://github.com/gautemo/graphql-node-mongodb#readme"
+  "homepage": "https://github.com/gautemo/graphql-node-mongodb#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
