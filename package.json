@@ -1,0 +1,20 @@
+{
+  "name": "graphql-node-mongodb",
+  "version": "1.0.0",
+  "description": "This is a minimalistic tutorial of how to create a CRUD application with GraphQL, MongoDB and NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gautemo/graphql-node-mongodb.git"
+  },
+  "author": "Gaute Meek Olsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gautemo/graphql-node-mongodb/issues"
+  },
+  "homepage": "https://github.com/gautemo/graphql-node-mongodb#readme"
+}
