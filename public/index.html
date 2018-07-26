@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Title</title>
+  <meta name="author" content="Gaute Meek Olsen">
+
+  <link rel="stylesheet" href="style.css?v=1.0">
+  <script src="controller.js?v=1.0"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="create" onclick="showCreate()">C</h1>
+        <h1 class="read" onclick="showRead()">R</h1>
+        <h1 class="update" onclick="showUpdate()">U</h1>
+        <h1 class="delete" onclick="showDelete()">D</h1>        
+    </header>
+    <section id="create-section">
+        <div class="block">
+            <label>Name: </label><input type="text" id="add-name"/>
+        </div>
+        <div class="block">
+            <label>Color: </label><input type="text" id="add-color"/>
+        </div>
+        <div class="block">
+            <button onclick="createMonster()" >Create monster!</button>
+        </div>
+        <div class="block">
+            <span id="add-res"></span>
+        </div>
+    </section>
+    <section id="read-section" class="hide">
+        <pre id="monsters"></pre>
+    </section>
+    <section id="update-section" class="hide">
+        <div class="block">
+            <label>Update monster with this name: </label><input type="text" id="update-old-name"/>
+        </div>
+        <div class="block">
+            <label>New name: </label><input type="text" id="update-name"/>
+        </div>
+        <div class="block">
+            <label>New color: </label><input type="text" id="update-color"/>
+        </div>            
+        <div class="block">
+            <button onclick="updateMonster()" >Update monster!</button>
+        </div>
+        <div class="block">
+            <span id="update-res"></span>
+        </div>        
+    </section>
+    <section id="delete-section" class="hide">
+        <div class="block">
+            <label>Delete monster with this name: </label><input type="text" id="delete-name"/>
+        </div>
+        <div class="block">
+            <button onclick="deleteMonster()" >Delete monster!</button>
+        </div>
+        <div class="block">
+            <span id="delete-res"></span>
+        </div>          
+    </section>            
+</body>
+</html>

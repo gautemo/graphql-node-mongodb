@@ -3,6 +3,8 @@ const graphqlHTTP = require('express-graphql');
 const mongoose = require('mongoose');
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+app.use(express.static('public'));
 const schema = require('./graphql/schema.js');
 const root = require('./graphql/root.js');
 
@@ -15,7 +17,7 @@ db.once('open', function() {
   // we're connected!
 });
 
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/', (req, res) => res.render('index'));
 
 app.use('/graphql', graphqlHTTP({
     schema: schema,

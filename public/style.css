@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+header h1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+    height: 100px;
+}
+
+.create{
+    background-color: aqua;
+}
+.read{
+    background-color: orangered;
+}
+.update{
+    background-color: palegreen;
+}
+.delete{
+    background-color: pink;
+}
+
+.create:hover:after{
+    content: 'reate';
+}
+.read:hover:after{
+    content: 'ead';
+}
+.update:hover:after{
+    content: 'pdate';
+}
+.delete:hover:after{
+    content: 'elete';
+}
+
+.hide{
+    display: none;
+}
+
+section{
+    margin-left: 25px;
+}
+
+.block{
+    margin: 5px;
+}
+
+#add-res, #update-res, #delete-res{
+    white-space: pre-line;
+}

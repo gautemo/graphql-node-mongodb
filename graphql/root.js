@@ -12,7 +12,7 @@ let root = {
     updateMonster: async (data) => {
         let find = { name: data.nameOfMonsterToUpdate };
         let query = await Monster.update(find, data.monster);
-        return `${query.n} monster(s) updated`;
+        return `${query.n} monster updated`;
     },
     deleteMonster: async (data) => {
         let query = await Monster.remove({name: data.name});
