@@ -1,10 +1,12 @@
 # GraphQL MongoDB Node.js Guide
-This is a minimalistic guide of how to create a CRUD application with GraphQL, MongoDB, mongoose, NodeJS and Express
+This is a minimalistic guide of how to create a CRUD application with GraphQL, MongoDB, mongoose, Node.js and Express
 
 ### Prerequisites
 [Node](https://nodejs.org/en/download/)
 
-## Tutorial
+## Guide
+
+This is a guide/tutorial/walkthrough. See this links for more information about the subjects, [GraphQL](https://graphql.org/learn/), [MongoDB](https://docs.mongodb.com/), [Mongoose](http://mongoosejs.com/), [Node.js](https://nodejs.org/en/docs/guides/) and [Express](https://expressjs.com/)
 
 ### Node.js
 * `mkdir projectname`
