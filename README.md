@@ -23,8 +23,6 @@ const PORT = process.env.PORT || 3000;
 app.get('/', (req, res) => res.send('Hello World!'));
 
 app.listen(PORT, () => console.log(`Example app listening on port ${ PORT }!`));
-
-module.exports = app;
 ```
 * `npm start` and navigate to `localhost:3000` and you should see Hello World!
 
@@ -158,6 +156,18 @@ let root = {
     }
 };
 ```
+
+### Time to clean up index.js and add some project structure
+* How I structured the project
+```
+- index.js
+- mongodb
+    - monsterModel.js
+- graphql
+    - schema.js
+    - root.js
+```
+* Then copied the code from index.js into their files and exported with `module.exports = root;` and imported with `const root = require('./graphql/root.js');` (for all 3 files)
 
 ## Authors
 
